@@ -1,0 +1,74 @@
+{
+  "species": [
+    {
+      "id": "Escherichia_coli",
+      "name": "Escherichia coli",
+      "fragmentCount": 7,
+      "genomeSize": "~5.0 Mb",
+      "description": "Common gut bacterium and model organism"
+    },
+    {
+      "id": "Staphylococcus_aureus",
+      "name": "Staphylococcus aureus",
+      "fragmentCount": 5,
+      "genomeSize": "~2.8 Mb",
+      "description": "Major human pathogen (MRSA)"
+    },
+    {
+      "id": "Salmonella_enterica",
+      "name": "Salmonella enterica",
+      "fragmentCount": 7,
+      "genomeSize": "~4.8 Mb",
+      "description": "Foodborne pathogen causing salmonellosis"
+    },
+    {
+      "id": "Klebsiella_pneumoniae",
+      "name": "Klebsiella pneumoniae",
+      "fragmentCount": 8,
+      "genomeSize": "~5.5 Mb",
+      "description": "Hospital-acquired infection pathogen"
+    },
+    {
+      "id": "Pseudomonas_aeruginosa",
+      "name": "Pseudomonas aeruginosa",
+      "fragmentCount": 4,
+      "genomeSize": "~6.3 Mb",
+      "description": "Opportunistic pathogen, cystic fibrosis"
+    },
+    {
+      "id": "Acinetobacter_baumannii",
+      "name": "Acinetobacter baumannii",
+      "fragmentCount": 6,
+      "genomeSize": "~4.0 Mb",
+      "description": "Multi-drug resistant nosocomial pathogen"
+    },
+    {
+      "id": "Streptococcus_pneumoniae",
+      "name": "Streptococcus pneumoniae",
+      "fragmentCount": 4,
+      "genomeSize": "~2.1 Mb",
+      "description": "Pneumonia and meningitis pathogen"
+    },
+    {
+      "id": "Mycobacterium_tuberculosis",
+      "name": "Mycobacterium tuberculosis",
+      "fragmentCount": 1,
+      "genomeSize": "~4.4 Mb",
+      "description": "Tuberculosis pathogen (single rRNA operon)"
+    },
+    {
+      "id": "Enterococcus_faecium",
+      "name": "Enterococcus faecium",
+      "fragmentCount": 6,
+      "genomeSize": "~2.8 Mb",
+      "description": "VRE pathogen"
+    },
+    {
+      "id": "Enterococcus_faecalis",
+      "name": "Enterococcus faecalis",
+      "fragmentCount": 4,
+      "genomeSize": "~3.2 Mb",
+      "description": "Opportunistic pathogen"
+    }
+  ]
+}
