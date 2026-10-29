@@ -4,7 +4,7 @@
 
 Socrux is a client-side reimplementation of [socru](https://github.com/quadram-institute-bioscience/socru) that runs entirely in the browser using WebAssembly. It assigns a Genome Structure (GS) identifier representing the order and orientation of DNA fragments between ribosomal RNA operons in complete bacterial assemblies.
 
-**Live app:** https://socrux.vercel.app
+**Live app:** https://socrux.genomicx.org
 
 ## What it does
 
@@ -58,7 +58,11 @@ npm run build      # production build
 npm run check      # tests + lint + build
 ```
 
-Requires Node.js 20+.
+Requires Node.js 24+.
+
+## Deployment
+
+Hosted on Cloudflare Pages (`socrux`) at https://socrux.genomicx.org. Build with `npm run build`; publish `dist`. Species databases remain bundled under `/data/`; Aioli/minimap2 retains its existing biowasm CDN loading.
 
 ## How it differs from the original socru
 

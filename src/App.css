@@ -38,7 +38,7 @@
 .theme-toggle {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 10px;
+  border-radius: var(--gx-radius-lg);
   padding: 0.45rem 0.7rem;
   cursor: pointer;
   font-size: 1.15rem;
@@ -108,7 +108,7 @@
   justify-content: center;
   min-height: 180px;
   border: 2px dashed var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 2rem 1.5rem;
   text-align: center;
   cursor: pointer;
@@ -164,9 +164,9 @@
   background: var(--gx-tag-bg);
   border: 1px solid var(--gx-tag-border);
   padding: 0.2rem 0.65rem;
-  border-radius: 20px;
+  border-radius: var(--gx-radius-pill);
   font-size: 0.8rem;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   color: var(--gx-tag-text);
 }
 
@@ -177,30 +177,31 @@
   background: var(--gx-gradient);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--gx-radius-lg);
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.3);
+  box-shadow: 0 2px 8px var(--gx-accent-dim);
 }
 
 .run-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.4);
+  box-shadow: 0 4px 16px var(--gx-accent-dim);
 }
 
 .run-button:active:not(:disabled) {
   transform: translateY(0);
-  box-shadow: 0 1px 4px rgba(13, 148, 136, 0.3);
+  box-shadow: 0 1px 4px var(--gx-accent-dim);
 }
 
 .run-button:disabled {
-  background: var(--gx-accent);
+  background: var(--gx-disabled-bg);
+  color: var(--gx-disabled-text);
   cursor: not-allowed;
   box-shadow: none;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .export-button {
@@ -208,7 +209,7 @@
   background: var(--gx-bg-alt);
   color: var(--gx-accent);
   border: 1px solid var(--gx-accent);
-  border-radius: 8px;
+  border-radius: var(--gx-radius);
   font-family: inherit;
   font-size: 0.85rem;
   font-weight: 500;
@@ -226,7 +227,7 @@
   margin-bottom: 1.5rem;
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.25rem 1.5rem;
   box-shadow: var(--gx-shadow);
 }
@@ -273,14 +274,14 @@
   margin: 0.6rem 0 0;
   font-size: 0.8rem;
   color: var(--gx-text-muted);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
 }
 
 /* ── Error ───────────────────────────────────── */
 .error {
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.2);
-  border-radius: 10px;
+  border-radius: var(--gx-radius-lg);
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
 }
@@ -295,7 +296,7 @@
 .results {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.5rem;
   box-shadow: var(--gx-shadow);
 }
@@ -322,7 +323,7 @@
 
 .results-table-container {
   overflow-x: auto;
-  border-radius: 8px;
+  border-radius: var(--gx-radius);
   border: 1px solid var(--gx-border);
 }
 
@@ -368,7 +369,7 @@
 .log-console {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.5rem;
   margin-top: 1.5rem;
   box-shadow: var(--gx-shadow);
@@ -397,7 +398,7 @@
 .log-count {
   font-size: 0.8rem;
   color: var(--gx-text-muted);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
 }
 
 .copy-log-button {
@@ -423,10 +424,10 @@
   overflow-y: auto;
   background: var(--gx-bg-elevated);
   border: 1px solid var(--gx-border);
-  border-radius: 8px;
+  border-radius: var(--gx-radius);
   padding: 0.75rem;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 0.78rem;
+  font-family: var(--gx-font-mono);
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -450,7 +451,7 @@
 .about-page section {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.75rem;
   margin-bottom: 1.5rem;
   box-shadow: var(--gx-shadow);
@@ -498,7 +499,7 @@
   font-weight: 500;
   padding: 0.35rem 0.85rem;
   border: 1px solid var(--gx-border);
-  border-radius: 20px;
+  border-radius: var(--gx-radius-pill);
   background: var(--gx-bg-elevated);
   transition: all 0.2s;
 }
@@ -515,7 +516,7 @@
   gap: 0.75rem;
   background: var(--gx-accent-dim);
   border: 1px solid var(--gx-tag-border);
-  border-radius: 10px;
+  border-radius: var(--gx-radius-lg);
   padding: 1rem 1.25rem;
   margin-top: 0.5rem;
 }
@@ -569,7 +570,7 @@
 .species-select {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.5rem;
   box-shadow: var(--gx-shadow);
 }
@@ -587,7 +588,7 @@
   padding: 0.6rem 0.75rem;
   background: var(--gx-bg-elevated);
   border: 1px solid var(--gx-border);
-  border-radius: 8px;
+  border-radius: var(--gx-radius);
   color: var(--gx-text);
   font-family: inherit;
   font-size: 0.9rem;
@@ -617,7 +618,7 @@
   align-items: center;
   gap: 0.35rem;
   padding: 0.25rem 0.75rem;
-  border-radius: 20px;
+  border-radius: var(--gx-radius-pill);
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -646,7 +647,7 @@
 .genome-map-container {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: var(--gx-shadow);
@@ -667,7 +668,7 @@
 .profile-display {
   background: var(--gx-bg-alt);
   border: 1px solid var(--gx-border);
-  border-radius: 12px;
+  border-radius: var(--gx-radius-lg);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: var(--gx-shadow);
@@ -707,7 +708,14 @@
   color: var(--gx-text);
   background: var(--gx-bg-elevated);
   padding: 0.75rem 1rem;
-  border-radius: 8px;
+  border-radius: var(--gx-radius);
   border: 1px solid var(--gx-border);
   letter-spacing: 0.05em;
 }
+
+/* Preserve the existing navigation geometry with the shared charcoal palette. */
+.tab-bar { background: var(--gx-nav-bg); }
+.tab { color: var(--gx-nav-muted); line-height: 17px; }
+.tab:hover, .tab-active { color: var(--gx-nav-text); }
+.run-button { color: var(--gx-text-inverted); }
+.log-body { background: var(--gx-code-bg); }

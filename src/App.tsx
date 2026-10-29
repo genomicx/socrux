@@ -117,7 +117,7 @@ function App() {
           <span>GenomicX &mdash; open-source bioinformatics for the browser</span>
           <div className="footer-links">
             <a href="https://github.com/genomicx" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://genomicx.vercel.app/about" target="_blank" rel="noopener noreferrer">Mission</a>
+            <a href="https://genomicx.org/about" target="_blank" rel="noopener noreferrer">Mission</a>
             <a href="https://www.happykhan.com/" target="_blank" rel="noopener noreferrer">Nabil-Fareed Alikhan</a>
           </div>
         </div>

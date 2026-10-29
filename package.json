@@ -5,7 +5,7 @@
   "type": "module",
   "license": "GPL-3.0-only",
   "author": "Nabil-Fareed Alikhan <nabil@happykhan.com> (https://www.happykhan.com)",
-  "homepage": "https://socrux.vercel.app",
+  "homepage": "https://socrux.genomicx.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/genomicx/socrux.git"
@@ -32,6 +32,7 @@
     "check": "vitest run && eslint . && npm run build"
   },
   "dependencies": {
+    "@genomicx/ui": "0.10.1",
     "file-saver": "^2.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
